@@ -384,25 +384,20 @@ int main() {
 		delay (500);	
 		
 		if (mode=="p"||mode=="P") {
-		  std::cout << radio.get_params();
+			radio.get_params();
 		  
-		  char freq_err[20];
-		  char mod_dev[20];
-		  char pow_amp[20];
+			char freq_err[20];
+			char pow_amp[20];
 
-		  std::cout << "P: FREQ ERR CORR"<< std::endl;
-		  std::cin >> freq_err;
-
-		  std::cout << "P: MOD DEV"<< std::endl;
-		  std::cin >> mod_dev;
-
+			std::cout << "P: FREQ ERR CORR"<< std::endl;
+			std::cin >> freq_err;
 		  
-		  std::cout << "P: POW AMP"<< std::endl;
-		  std::cin >> pow_amp;
-		  
-		  radio.set_params(atoi(freq_err),atoi(mod_dev),atoi(pow_amp));
-		  
-		  radio.setup();
+			std::cout << "P: POW AMP"<< std::endl;
+			std::cin >> pow_amp;
+			  
+			radio.set_params(atoi(freq_err),atoi(pow_amp));
+			  
+			radio.setup();
 		}
 		
 		if (mode=="cw"||mode=="CW") {

@@ -8,8 +8,8 @@ class RadioAdf7012 {
     virtual bool ptt_on();
     virtual void ptt_off();
     virtual void set_freq(unsigned long freq);
-    virtual void set_params(int f,int m, int p);
-    virtual char* get_params();
+    virtual void set_params(int f, int p);
+    virtual void get_params();
     virtual int get_powerlevel();
     
     virtual void adf_reset_config(void); //vorübergehend public machen zum testen
