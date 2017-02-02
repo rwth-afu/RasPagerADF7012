@@ -120,8 +120,8 @@ if(FIFOBUF_##name##_pop >= sizeof(FIFOBUF_##name##_data)) FIFOBUF_##name##_pop =
 
 FIFO_Init(buffer, uint8_t, 512);
 
-// INT 1 Service Routine. Executed on falling edge. Set new bit on each execution.
-ISR(INT1_vect) {
+// INT 0 Service Routine. Executed on falling edge. Set new bit on each execution.
+ISR(INT0_vect) {
 
 	// Handle shifting out of data
 	if (!FIFO_Empty(buffer)) {     // Data in buffer?

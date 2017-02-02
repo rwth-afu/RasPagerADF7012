@@ -87,11 +87,7 @@ class RadioAdf7012 {
 #define TXCLK 14
 #define CLKOUT 12   
 
-// Radio Parameters
-//#define CRYSTALFREQ 4915200UL
-//#define FREQUENCY 439987500UL     
-
-// 18.432 MHz
+// Radio Parameters for 18.432 MHz
 #define CRYSTALFREQ 18432000UL
 #define FREQUENCY 439987500UL     
     
@@ -101,7 +97,7 @@ class RadioAdf7012 {
 // #define MOSIpin 11   // MOSI
 
 //#define ADF7012_CRYSTAL_FREQ VCXO_FREQ
-#define ADF7012_CRYSTAL_DIVIDER 1 
+#define ADF7012_CRYSTAL_DIVIDER 2 
     
 // POCSAG Protokoll
 #define POCSAG_PREAMBLE_CODEWORD 0xAAAAAAAA

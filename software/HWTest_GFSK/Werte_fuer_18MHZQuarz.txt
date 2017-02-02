@@ -1,5 +1,23 @@
+FSK:
 Aktuelle Werte:
 	FREQ ERR CORR -17
 	MOD DEV 3
 	POW AMP 50
+	
+GFSK:
 
+Deviation 4.5 kHz
+R Divider:	2
+Mod Control: 1
+DividerFaktor: 120
+IndexCouter: 64
+NInt: 47
+N Frac: 3038
+
+Deviation 3.0 kHz
+R Divider:	3
+Mod Control: 1
+DividerFaktor: 40
+IndexCouter: 128
+NInt 71
+N Frac 2509
