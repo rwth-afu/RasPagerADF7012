@@ -1,0 +1,5 @@
+Aktuelle Werte:
+	FREQ ERR CORR -17
+	MOD DEV 3
+	POW AMP 50
+
